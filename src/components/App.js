@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ResourceList from "./ResourceList";
+import UserList from "./UserList";
 
 // this is now a functional component
 const App = () => {
@@ -8,7 +9,11 @@ const App = () => {
 
   return (
     <div>
+      <h2>UserList:</h2>
+      <UserList />
+      <hr />
       <div>
+        <h4>Select a Resource:</h4>
         <button onClick={() => setResource("posts")}>Posts</button>
         <button onClick={() => setResource("todos")}>ToDos</button>
       </div>
